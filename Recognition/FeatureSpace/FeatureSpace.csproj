@@ -1,0 +1,99 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{DD5149AF-A133-45F5-A338-1ED7263AB717}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>FeatureSpace</RootNamespace>
+    <AssemblyName>FeatureSpace</AssemblyName>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="MathNet.Iridium, Version=1.0.0.26310, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Util\MathNet.Iridium-2008.4.14.425\Build\Debug\MathNet.Iridium.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Ink, Version=1.7.2600.2180, Culture=neutral, PublicKeyToken=31bf3856ad364e35">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\..\Program Files\\Microsoft Tablet PC Platform SDK\Include\Microsoft.Ink.dll</HintPath>
+    </Reference>
+    <Reference Include="Set, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Util\Set\bin\Debug\Set.dll</HintPath>
+    </Reference>
+    <Reference Include="Sketch, Version=1.0.3797.15596, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Util\Sketch\bin\Debug\Sketch.dll</HintPath>
+    </Reference>
+    <Reference Include="statistic, Version=1.0.3796.26311, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Util\statistic\bin\Debug\statistic.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Utilities, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Util\Utilities\Utilities\bin\Debug\Utilities.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ArcLength.cs" />
+    <Compile Include="ClosedPath.cs" />
+    <Compile Include="Compute.cs" />
+    <Compile Include="Curvature.cs" />
+    <Compile Include="EndPoint.cs" />
+    <Compile Include="Features\CanvasFeatures.cs" />
+    <Compile Include="Features\CurvatureFeatures.cs" />
+    <Compile Include="Features\Feature.cs" />
+    <Compile Include="FeatureSingleStroke.cs" />
+    <Compile Include="FeatureSketch.cs">
+    </Compile>
+    <Compile Include="FeatureStrokePair.cs" />
+    <Compile Include="Features\IntersectionFeatures.cs" />
+    <Compile Include="Features\PairwiseFeatures.cs" />
+    <Compile Include="Features\PathFeatures.cs" />
+    <Compile Include="Fit.cs" />
+    <Compile Include="Intersection.cs" />
+    <Compile Include="IntersectionPair.cs" />
+    <Compile Include="IntersectionSketch.cs">
+    </Compile>
+    <Compile Include="LeastSquares.cs" />
+    <Compile Include="Line.cs" />
+    <Compile Include="PairwiseFeatureSketch.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Features\SizeFeature.cs" />
+    <Compile Include="Features\TimeDependentFeatures.cs" />
+    <Compile Include="Slope.cs" />
+    <Compile Include="Spatial.cs" />
+    <Compile Include="Speed.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

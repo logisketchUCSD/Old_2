@@ -1,0 +1,55 @@
+Setting Features in the CRF
+----------------------------
+
+The CRF uses two different types of features: site features and interaction
+features. Site features only exist for a single stroke; they might be things
+like Arc Length, Curvature, or Speed. Interaction features exist between
+pairs of strokes and might include things like intersections, distances,
+relative angles, and relative speeds.
+
+To add or remove features, first decide which sort of feature you'd like to
+modify. Then open the CRF.sln file in Microsoft Visual Studio 2005 and
+select either the SiteFeatures.cs file or the InteractionFeatures.cs file.
+You will need to make three changes: 
+	1) You must create a wrapper function for delegation
+	2) You must modify the numInterFeatures()/numSiteFeatures() function to
+	return the new number of features
+	3) You must add your feature to the vector in
+	getInteractionFeatures()/getSiteFeatures()
+
+Delegate Function
+-----------------
+
+This is the most important part. As it stands now, features are calculated
+using delegates. You must create a new function (either in
+InteractionFeatures.cs or SiteFeatures.cs, as appropriate) to wrap around
+the feature you'd like to expose. For site features, this function should
+take a single Node and a list of Substrokes as input; for interaction
+features, it should take two Nodes and a list of Substrokes. For an
+extremely simple example, see the multiStrokeClosedShape function in
+SiteFeatures.cs; it wraps around a feature in FeatureSketch and returns a
+binary value. Note that a FeatureSketch object is available via the "sketch"
+object, and FeatureStroke objects are available for each node via the
+Node.fragFeats accessor. You should not create a new FeatureSketch or
+FeatureStroke object in the vast majority of cases. Most features are
+available through these objects and simply must be exposed to the CRF to use
+them.
+
+numSiteFeatures()/numInterFeatures()
+------------------------------------
+
+As a legacy of the way the code works, the number of features must be
+available through this function. It's pretty straightforward -- increment it
+if you're adding a feature, decrement it if you're removing one.
+
+getSiteFeatures()/getInterFeatures()
+------------------------------------
+
+Features are stored in an array of delegates, each of which references one
+of the wrapper functions I mentioned above. To add a new feature, create the
+delegate, then just add it to the end of the array. It will be exposed and
+used next time the CRF is run.
+
+
+													James Brown
+													jbrown@cs.hmc.edu

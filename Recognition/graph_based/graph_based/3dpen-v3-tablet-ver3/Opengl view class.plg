@@ -1,0 +1,109 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: OpenGL View Class - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating command line "rc.exe /l 0x409 /fo".\Debug/OpenGL View Class.res" /d "_DEBUG" "C:\Documents and Settings\weesan\My Documents\source\3dpen-v3-tablet-ver3\OpenGL View Class.rc"" 
+Creating temporary file "C:\DOCUME~1\weesan\LOCALS~1\Temp\RSP5D.tmp" with contents
+[
+/nologo /MTd /W3 /Gm /GX /ZI /Od /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_MBCS" /FR".\Debug/" /Fp".\Debug/Opengl view class.pch" /Yu"stdafx.h" /Fo".\Debug/" /Fd".\Debug/" /FD /c 
+"C:\Documents and Settings\weesan\My Documents\source\3dpen-v3-tablet-ver3\COpenGLView.cpp"
+"C:\Documents and Settings\weesan\My Documents\source\3dpen-v3-tablet-ver3\gl_view.cpp"
+"C:\Documents and Settings\weesan\My Documents\source\3dpen-v3-tablet-ver3\ink.cpp"
+"C:\Documents and Settings\weesan\My Documents\source\3dpen-v3-tablet-ver3\MainFrm.cpp"
+"C:\Documents and Settings\weesan\My Documents\source\3dpen-v3-tablet-ver3\OpenGL View Class.cpp"
+"C:\Documents and Settings\weesan\My Documents\source\3dpen-v3-tablet-ver3\OpenGL View ClassDoc.cpp"
+"C:\Documents and Settings\weesan\My Documents\source\3dpen-v3-tablet-ver3\PlotDialog.cpp"
+"C:\Documents and Settings\weesan\My Documents\source\3dpen-v3-tablet-ver3\ProcessDialog.cpp"
+"C:\Documents and Settings\weesan\My Documents\source\3dpen-v3-tablet-ver3\ProcessingDialog.cpp"
+"C:\Documents and Settings\weesan\My Documents\source\3dpen-v3-tablet-ver3\PsRender.cpp"
+"C:\Documents and Settings\weesan\My Documents\source\3dpen-v3-tablet-ver3\pythag.cpp"
+"C:\Documents and Settings\weesan\My Documents\source\3dpen-v3-tablet-ver3\svbksb.cpp"
+"C:\Documents and Settings\weesan\My Documents\source\3dpen-v3-tablet-ver3\SVDC_SolveAXD.cpp"
+"C:\Documents and Settings\weesan\My Documents\source\3dpen-v3-tablet-ver3\svdcmp.cpp"
+"C:\Documents and Settings\weesan\My Documents\source\3dpen-v3-tablet-ver3\ysmain.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\weesan\LOCALS~1\Temp\RSP5D.tmp" 
+Creating temporary file "C:\DOCUME~1\weesan\LOCALS~1\Temp\RSP5E.tmp" with contents
+[
+/nologo /MTd /W3 /Gm /GX /ZI /Od /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_MBCS" /FR".\Debug/" /Fp".\Debug/Opengl view class.pch" /Yc"stdafx.h" /Fo".\Debug/" /Fd".\Debug/" /FD /c 
+"C:\Documents and Settings\weesan\My Documents\source\3dpen-v3-tablet-ver3\StdAfx.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\weesan\LOCALS~1\Temp\RSP5E.tmp" 
+Creating temporary file "C:\DOCUME~1\weesan\LOCALS~1\Temp\RSP5F.tmp" with contents
+[
+opengl32.lib glu32.lib glaux.lib WINTAB32.LIB /nologo /subsystem:console /incremental:yes /pdb:".\Debug/Opengl view class.pdb" /debug /machine:I386 /out:".\Debug/Opengl view class.exe" 
+".\Debug\COpenGLView.obj"
+".\Debug\gl_view.obj"
+".\Debug\ink.obj"
+".\Debug\MainFrm.obj"
+".\Debug\OpenGL View Class.obj"
+".\Debug\OpenGL View ClassDoc.obj"
+".\Debug\PlotDialog.obj"
+".\Debug\ProcessDialog.obj"
+".\Debug\ProcessingDialog.obj"
+".\Debug\PsRender.obj"
+".\Debug\pythag.obj"
+".\Debug\StdAfx.obj"
+".\Debug\svbksb.obj"
+".\Debug\SVDC_SolveAXD.obj"
+".\Debug\svdcmp.obj"
+".\Debug\ysmain.obj"
+".\Debug\OpenGL View Class.res"
+]
+Creating command line "link.exe @C:\DOCUME~1\weesan\LOCALS~1\Temp\RSP5F.tmp"
+<h3>Output Window</h3>
+Compiling resources...
+Compiling...
+StdAfx.cpp
+Compiling...
+COpenGLView.cpp
+gl_view.cpp
+ink.cpp
+MainFrm.cpp
+OpenGL View Class.cpp
+OpenGL View ClassDoc.cpp
+PlotDialog.cpp
+ProcessDialog.cpp
+ProcessingDialog.cpp
+PsRender.cpp
+pythag.cpp
+svbksb.cpp
+SVDC_SolveAXD.cpp
+svdcmp.cpp
+ysmain.cpp
+Generating Code...
+Linking...
+Creating temporary file "C:\DOCUME~1\weesan\LOCALS~1\Temp\RSP61.tmp" with contents
+[
+/nologo /o".\Debug/Opengl view class.bsc" 
+".\Debug\StdAfx.sbr"
+".\Debug\COpenGLView.sbr"
+".\Debug\gl_view.sbr"
+".\Debug\ink.sbr"
+".\Debug\MainFrm.sbr"
+".\Debug\OpenGL View Class.sbr"
+".\Debug\OpenGL View ClassDoc.sbr"
+".\Debug\PlotDialog.sbr"
+".\Debug\ProcessDialog.sbr"
+".\Debug\ProcessingDialog.sbr"
+".\Debug\PsRender.sbr"
+".\Debug\pythag.sbr"
+".\Debug\svbksb.sbr"
+".\Debug\SVDC_SolveAXD.sbr"
+".\Debug\svdcmp.sbr"
+".\Debug\ysmain.sbr"]
+Creating command line "bscmake.exe @C:\DOCUME~1\weesan\LOCALS~1\Temp\RSP61.tmp"
+Creating browse info file...
+<h3>Output Window</h3>
+
+
+
+<h3>Results</h3>
+Opengl view class.exe - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>
